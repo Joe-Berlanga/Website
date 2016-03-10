@@ -1,0 +1,12 @@
+﻿@using WebMatrix.WebData;
+@if(WebSecurity.IsAuthenticated)
+{
+  <p>Welcome, @WebSecurity.CurrentUserName</p>
+  <h2>This is members area</h2>
+}
+else
+{
+  
+    <h2> you're not logged in</h2>
+}
+

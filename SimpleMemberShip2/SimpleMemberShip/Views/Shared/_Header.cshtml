@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "_Header";
+}
+@using WebMatrix.WebData;
+
+ <div id="banner" class="section col span_12_of_12">
+           <div class="span_3_of_12" id="accountBar">
+               <ul>
+                   @if(WebSecurity.IsAuthenticated)
+                    {
+                       
+                            <li>@Html.ActionLink(WebSecurity.CurrentUserName, "", "")</li>
+                            <li>@Html.ActionLink("Log out", "","")</li>
+                       
+                    }
+                    else
+                    {
+                       
+                            <li>@Html.ActionLink("Log in", "", "")</li>
+                            <li>@Html.ActionLink("Register", "Register","Account")</li>
+                       
+                    }
+                </ul>
+            </div>
+      
+        </div>
+     <div id="navbar">
+              
+              <img src="~/Content/Icons/menu33.png" class="menubtn"/>
+              <div id="hamburgermenu">
+                <ul>
+                  <li>@Html.ActionLink("Home", "Index","Basic")</li>
+                  <li>@Html.ActionLink("CSS3", "CSS3","Basic")</li>
+                  <li>@Html.ActionLink("MVC", "MVC","Basic")</li>
+                  <li>@Html.ActionLink("Razor", "Razor","Basic")</li>
+                  <li>@Html.ActionLink("Databases", "Databases","Basic")</li>
+                  <li>@Html.ActionLink("Javascript", "Javascript","Basic")</li>
+                  <li>@Html.ActionLink("JQUERY & AJAX", "Jquery","Basic")</li>
+                  
+                </ul>
+              </div>
+            </div>
+            <div class="overlay"></div>
+    <div id="wrapperTop" class="section col span_12_of_12">
+
+    <div id="welcome" class="span_8_of_12">
+        <div id="border">
+            <h2 id="name"><strong>JOE BERLANGA'S</strong> </h2>
+            <h2>ONLINE PORTFOLIO</h2>
+        </div>
+
+        
+        <p> NOT SURE WHERE TO START?</p> 
+        
+
+        <div id="linkButton"> @Html.ActionLink("GET STARTED", "", "") </div>
+        
+    </div>
+</div>

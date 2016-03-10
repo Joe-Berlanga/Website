@@ -1,0 +1,52 @@
+﻿@model SimpleMemberShip.Models.EmailModel
+@using WebMatrix.WebData;
+@using WebMatrix.Data;
+@{
+    ViewBag.Title = "_Footer";
+}
+
+<div id="wrapperFooter" class=" section span_12_of_12">
+
+   <div ><h2 class="toggler">Contact Me</h2><img  src="~/Content/Icons/download148.png" class="arrow toggler"/>
+       <div id="contactForm">
+
+            <form id="form" class="pure-form pure-form-stacked span_6_of_12">
+
+                
+    
+                <div class="success"> @TempData["success"] </div>
+  
+
+                    <ul>
+                        <li>
+                    
+                            @Html.LabelFor(m => m.FromEmail, new { @class = "Lbl" })
+                            @Html.ValidationMessageFor(m => m.FromEmail)
+                            @Html.TextBoxFor(m => m.FromEmail, new { @class = "Txt" })
+                    
+                        </li>
+                        <li>
+                            @Html.LabelFor(m => m.FromName, new { @class = "Lbl" })
+                            @Html.ValidationMessageFor(m => m.FromName)
+                            @Html.TextBoxFor(m => m.FromName, new { @class = "Txt" })
+                    
+                        </li>
+                        <li>
+                            @Html.LabelFor(m => m.Message, new { @class = "Lbl" })
+                             @Html.ValidationMessageFor(m => m.Message)
+                            @Html.TextAreaFor(m => m.Message, new { @class = "Txt messageBox" })
+                   
+                        </li>
+                    </ul>
+          
+                    <button type="button" id="contactButton"> Submit </button>
+        
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+
+

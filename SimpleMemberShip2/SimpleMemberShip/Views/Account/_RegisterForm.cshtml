@@ -1,0 +1,37 @@
+﻿@model SimpleMemberShip.Models.RegisterModel
+@{
+    ViewBag.Title = "_RegisterForm";
+}
+
+<div id="register">
+
+    <p> This registration form gives the registratee no actual benefits. It is only, for purposes of this portfolio, to demonstrate the use of the simplemembership provider
+        To see a demonstration of this visit the features page.
+    </p>
+
+    
+    <form id="form" class="pure-form pure-form-stacked span_6_of_12">
+       <h3 class="span_10_of_12">Registration Form</h3>
+                <div class="error">@TempData["errorMessage"]</div>
+    
+                <ul>
+                    <li>
+                        @Html.LabelFor(m => m.UserName, new { @class = "Lbl" })
+                        @Html.ValidationMessageFor(m => m.UserName)
+                        @Html.TextBoxFor(m => m.UserName, new { @class = "Txt" })
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.Password, new { @class = "Lbl" })
+                        @Html.ValidationMessageFor(m => m.Password)
+                        @Html.PasswordFor(m => m.Password, new { @class = "Txt" })
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.ConfirmPassword, new { @class = "Lbl" })
+                        @Html.ValidationMessageFor(m => m.ConfirmPassword)
+                        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "Txt" })
+                    </li>
+                </ul>
+                <button type="button" id="registerButton" > Sign me up! </button>
+    
+    </form>
+</div>

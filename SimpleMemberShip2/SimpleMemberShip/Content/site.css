@@ -1,0 +1,500 @@
+﻿body {
+
+    margin:0px;
+    font-family:'Comic Sans MS';
+    color:white;
+    background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/ignasi_pattern_s.png");
+    background-repeat:repeat;
+    width:100%;
+    padding:0px;
+    text-align:center;
+
+}
+html {
+padding:0px;
+margin:0px;
+
+}
+
+/*wrapper*/
+#wrapper {
+
+    max-width:1500px;
+    margin:0px auto;
+    margin-top:0px;
+    display:block;
+    background-color:white;
+    padding:0px;
+
+}
+
+/*section tag for main content*/
+
+#main {
+
+margin:0px;
+padding:0px;
+
+}
+
+/*user account bar: log in, log out, register and account*/
+
+#accountBar {
+    float:right;
+    border-radius: 0px 25px 0px 0px;
+    margin:0px;
+    padding:0px;
+    text-align:right !important;
+    margin-right:1%;
+}
+#accountBar ul {
+    
+        margin:0px;
+        padding:0px;
+}
+#accountBar ul li {
+
+        display: inline;
+        margin-right: 5%;
+        margin:0px;
+        padding:0px;
+}
+#accountBar ul li a{
+
+     
+     text-decoration:none;
+     font-size: 15px !important;
+     color:white;
+     padding:0px;
+       
+     margin-right:3%;
+}
+#accountBar ul li a:hover {
+
+    color:rgb(0, 152, 153);
+
+}
+
+
+
+#banner {
+
+    background-color:rgba(0, 203, 204, 1);
+    margin:0px;
+    margin-bottom:0px;
+    padding:0px;
+}
+#border {
+    
+    border-top: double 3px white;
+    border-bottom: double 3px white;
+    border-right: solid thin white;
+    border-left:solid thin white;
+    padding:10%;
+    margin-top:2%;
+
+}
+#welcome {
+
+    padding:20px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    color:white;
+
+}
+
+
+#linkButton {
+    padding:3%;
+}
+#linkButton a { 
+    text-decoration:none;
+    padding:2%;
+    margin:0px;
+    background-color:rgb(0, 152, 153);
+    border-radius:10px;
+    color:white;
+    font-family:Text;
+    transition: all 200ms ease-out;    
+}
+#linkButton a:hover {
+
+    box-shadow: 0 0 0 2px white;
+    padding:4%;
+    transition: all 200ms ease-out; 
+
+}
+
+
+/*index page related styling*/
+
+.content {
+
+    height:400px;
+    float:left;
+    display:block;
+    border-top:thin #D8D8D8 solid;
+    border-bottom:thin #D8D8D8 solid;
+
+}
+.content2 {
+
+    height:400px;
+    float:left;
+    display:block;
+    border-right:thin solid #D8D8D8;
+    border-bottom:thin #D8D8D8 solid;
+    margin-bottom:5%;
+}
+.content2:first-child {
+
+ 
+    height:400px;
+    float:left;
+    display:block;
+   border-left:thin solid #D8D8D8;
+   border-right:thin solid #D8D8D8;
+    border-bottom:thin #D8D8D8 solid;
+
+}
+.content:first-child {
+
+     border:thin #D8D8D8 solid;
+
+
+}
+.content:last-child {
+    
+   border:thin #D8D8D8 solid;
+    
+}
+.contentTitle {
+
+    padding:2%;
+    border:none;
+    color:#424242;
+    font-size:20px;
+
+
+}
+
+/*feature pages related styling*/
+
+.contentStyle
+{
+    margin-bottom:3%;
+    background-color:#F2F2F2;
+    padding:3%;
+
+}
+.contentFeatures
+{
+    background:white;
+    margin:0px;
+    padding-top:3%;
+    padding-bottom:3%;
+    overflow-x:scroll;
+
+}
+/*wrapper styling*/
+
+#wrapperTop {
+
+    padding:0px;
+    margin:0px;
+    background-color:rgba(0, 203, 204, 1);
+    margin-bottom:5%;
+}
+#wrapperMiddle {
+
+
+    margin-right:auto;
+    margin-left:auto;
+    display:block;
+ 
+    padding:0px;
+
+}
+#wrapperMiddleContent {
+
+
+    margin-right:auto;
+    margin-left:auto;
+    display:block;
+
+    padding:0px;
+
+}
+
+/*paragraph styling*/
+
+p {
+
+        color:#424242;
+        padding:10px;
+        margin:0px;
+        
+}
+
+/*title styling*/
+h1
+{
+
+
+
+}
+h2 {
+
+    padding:0px;
+    margin:0px;
+    font-weight:100;
+    font-size:40px;
+    font-family:Text;
+
+}
+h3 {
+    
+    padding:0px;
+    color:#424242;
+    border-bottom:double 3px #D8D8D8;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:2%;
+    margin-top:0px;
+    display:block;
+    font-family:Text;
+    font-size:30px;
+}
+
+/* Navigation bar related styling*/
+
+#navbar {
+  max-width: 1000px;
+  margin: 0px;
+}
+ 
+.menubtn {
+  /* needs positioning for z-index http://stackoverflow.com/a/10600930/477958 */
+
+
+   position: absolute; 
+   top:2%;
+   left:2%;
+  z-index: 101;
+  background-image: url("Content/Icons/asp.png");
+
+  background-repeat: no-repeat;
+
+}
+.menubtn:hover, .openmenu .menubtn {
+  
+    cursor:pointer;
+  
+}
+.openmenu .menubtn {
+
+    display:none;
+
+}
+
+/** toggle menu **/
+
+body.openmenu {
+
+  position: fixed;
+  overflow: hidden;
+
+
+}
+.overlay {
+  position: fixed;
+  z-index: 99;
+  background-color: rgba(0,0,0,0.5);
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.openmenu .overlay {
+  top: 0;
+}
+#hamburgermenu {
+  height: 100%;
+  width: 0;
+  background-color:rgba(0, 203, 204, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  overflow: hidden;
+  -webkit-box-shadow: 3px 0 7px rgba(0,0,0,0.55);
+  -moz-box-shadow: 3px 0 7px rgba(0,0,0,0.55);
+  box-shadow: 3px 0 7px rgba(0,0,0,0.55);
+}
+#hamburgermenu ul {
+  margin-top: 45px;
+  z-index: 101;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#hamburgermenu ul li {
+  display: block;
+}
+#hamburgermenu ul li a {
+  display: block;
+  min-width: 130px;
+  margin:0px;
+  padding: 18px 8px;
+  color: white;
+  font-size: 1.45em;
+  text-decoration: none;
+  text-align: center;
+}
+#hamburgermenu li a:hover {
+
+  color: #fff;
+  background-color:rgba(0,0,0,0.5);
+}
+
+/* footer styling */
+
+.arrow.active {
+
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+
+}
+.toggler {
+
+    cursor:pointer;
+}
+#contactForm {
+
+        display:none;
+}
+#wrapperFooter {
+
+    padding-top:2%;
+    padding-bottom:2%;
+    background-color:#F2F2F2;
+    color:#424242;
+    margin:0px;
+    border: solid thin #E6E6E6;
+}
+#wrapperFooter ul {
+
+    padding:0px;
+    margin:0px;
+    list-style-type:none;
+    text-decoration:none;
+}
+#wrapperFooter ul li {
+
+    padding:0px;
+    margin:0px;
+
+}
+.Txt {
+    padding:0px;
+    width:100%;
+    margin:0px;
+}
+.Lbl {
+
+    margin:0px;
+    width:100%;
+    text-align:center;
+    padding:0px;
+
+}
+.messageBox {
+
+    height:200px;
+    resize:none;
+
+
+}
+#form {
+
+    margin-bottom:0px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0px;
+
+}
+#submit {
+
+    margin-bottom:0px;
+    padding:0px;
+    width:20%;
+}
+
+/* text styling */
+
+.field-validation-error {
+
+    text-align:left !important;
+    color:red;
+    font-weight:bold;
+    width:100%;
+
+}
+.error {
+
+    color:red;
+}
+.success {
+
+    margin:0px;
+    color:green;
+    padding:0px;
+
+}
+@font-face {
+
+    font-family: Text;
+    src: url("Fonts/FiraSans-Regular.otf");
+
+}
+@font-face {
+
+    font-family: Text1;
+    src: url("Fonts/Daniel-Regular.otf");
+
+}
+#name {
+
+    font-family: Text1;
+}
+
+.heading {
+
+    font-weight:bold;
+
+}
+
+/*register page*/
+#registerForm {
+
+    margin:0px;
+    padding:0px;
+
+}
+#register {
+
+    padding:0px;
+    margin:0%;
+    color:#424242;
+    margin-bottom: 5%;
+}
+#register ul {
+
+     padding: 0px;
+
+     list-style-type: none;
+     text-decoration: none;
+}
